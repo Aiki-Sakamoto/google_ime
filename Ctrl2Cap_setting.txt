@@ -1,0 +1,11 @@
+Windows端末では、以下の記事を参考にし、Ctrl2Capを使用して、CapsLockキーとCtrlキーを入れ替えている。
+    https://www.atmarkit.co.jp/ait/articles/0907/03/news103.html
+    https://docs.microsoft.com/ja-jp/sysinternals/downloads/ctrl2cap
+
+インストール後、管理者権限でコマンドプロンプトを開き、ダウンロードしたzipファイルを展開したディレクトリまで行き、
+```
+ctrl2cap.exe /install
+```
+を実行して再起動するだけ。
+
+「Ctrl2Cap」アンインストールするには、コマンドプロンプトで「/uninstall」オプションを付けて実行するだけ。

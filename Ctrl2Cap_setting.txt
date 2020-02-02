@@ -3,9 +3,49 @@ Windows端末では、以下の記事を参考にし、Ctrl2Capを使用して�
     https://docs.microsoft.com/ja-jp/sysinternals/downloads/ctrl2cap
 
 インストール後、管理者権限でコマンドプロンプトを開き、ダウンロードしたzipファイルを展開したディレクトリまで行き、
+通常だと、
+```
+cd C:\Users\sakamoto\Downloads\Ctrl2Cap
+```
+で行ける。ユーザ名はそのマシンによる。
+
+
+そこで、
+
 ```
 ctrl2cap.exe /install
 ```
 を実行して再起動するだけ。
 
 「Ctrl2Cap」アンインストールするには、コマンドプロンプトで「/uninstall」オプションを付けて実行するだけ。
+
+
+実行したとき
+```
+C:\Users\sakamoto\Downloads\Ctrl2Cap>ctrl2cap.exe /uninstall
+
+Ctrl2cap Installation Applet
+Copyright (C) 1999-2006 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+Error deleting \system32\drivers\ctrl2cap.sys:
+アクセスが拒否されました。
+
+Ctrl2cap uninstalled. You must reboot for this to take effect.
+```
+
+let's noteで上記の設定をしたところ、CapsLockキーを押しっぱなしでは、タッチパッドの操作ができない事象が発生した。
+
+なので、一旦、Ctrl2Capをアンインストールし、
+代替策として、「KeySwap for windows XP」を使用することとした。
+
+以下のURLを参考にしながら設定。
+https://ogatashota.com/1452/
+
+これでやってもcapslockキーを長押しすると、タッチパッドが動かなくなる。
+
+なので、レジストリエディタを直接弄ってキーの設定を変更することにした。
+
+詳細は、caps2ctrl.txtを参照。
+（※結果的にレジストリエディタを変更してもcapslockキーを長押ししたら、タッチパッドが動かなくなる問題は、解決しなかった。）
+（おそらくPanasonic製品の仕様なのか、let's noteの仕様なのか、わからないが。。。。）

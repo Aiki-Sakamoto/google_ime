@@ -1,0 +1,17 @@
+ここを参考に設定した。
+https://kekaku.addisteria.com/wp/20180531022629
+
+以下のテキストで、「caps2ctrl.txt」で一旦保存し、拡張子を後ほど、.regに変更する。
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
+```
+
+しかし、これで、設定しても、capslockキーはctrlキーとして働いてくれるが、
+長押しすると、タッチパッドが動かなくなる。
+
+
+なぜかは原因がわからないが、Panasonic製品の仕様？かと思う。
+
